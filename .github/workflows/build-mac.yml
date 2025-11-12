@@ -25,9 +25,9 @@ jobs:
     
     - name: Build with PyInstaller
       run: |
-        pyinstaller --name=GeoPort \
-          --windowed \
-                    --add-data "src/templates:templates" \
+        pyinstaller --name=GeoPort
+          --windowed
+                    --add-data "src/templates:templates"
           src/main.py
 
         - name: Upload APP
