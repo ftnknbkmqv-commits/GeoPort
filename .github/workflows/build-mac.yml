@@ -25,10 +25,7 @@ jobs:
     
     - name: Build with PyInstaller
       run: |
-        pyinstaller --name=GeoPort
-          --windowed
-                    --add-data "src/templates:templates"
-          src/main.py
+        pyinstaller --name=GeoPort --windowed --add-data "src/templates:templates" src/main.py
 
         - name: Upload APP
               uses: actions/upload-artifact@v4
