@@ -272,7 +272,7 @@ body.dark-mode .modal-footer button {
 <!-- Dark Mode switch -->
 <div class="d-flex justify-content-md-end mt-3 container">
     <div class="form-check form-switch">
-        <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch" onchange="toggleDarkMode()">
+        <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch" onchange="toggleDarkMode()" checked>
         <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
 
     </div>
@@ -725,7 +725,7 @@ async function initializeMap(userLocale) {
 
 
     // Add default tile layer
-    stadiaTileLayer.addTo(map);
+    Stadia_AlidadeSmoothDark.addTo(map);
 
     // Define tile layer control options
     var baseLayers = {
