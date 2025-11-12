@@ -27,7 +27,6 @@ jobs:
       run: |
         pyinstaller --name=GeoPort \
           --windowed \
-          --icon=images/icon.icns \
                     --add-data "src/templates:templates" \
           src/main.py
     
