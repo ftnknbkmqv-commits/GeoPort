@@ -29,9 +29,10 @@ jobs:
           --windowed \
                     --add-data "src/templates:templates" \
           src/main.py
+
+        - name: Upload APP
+              uses: actions/upload-artifact@v4
+                    with:
+                            name: GeoPort-macOS
+                                    path: dist/GeoPort.app
     
-    
-    - name: Upload APP      uses: actions/upload-artifact@v4
-      with:
-        name: GeoPort-macOS
-        path: dist/GeoPort.app
